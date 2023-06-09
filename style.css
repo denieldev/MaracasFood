@@ -1,0 +1,163 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./Img/CheadarBg.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+}
+.MFHomeLogo {
+  min-width: 450px;
+  max-width: 700px;
+  margin: 30px;
+}
+#searchFoods {
+  box-sizing: border-box;
+  border: solid 2px ;
+  max-width: 700px;
+  min-width: 450px;
+  height: 60px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 24px;
+  margin: 30px;
+  padding: 30px;
+  background-image: url(./Img/search-outline.svg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+.welcomeToMF {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+  height: 200px;
+}
+.news {
+  padding: 20px;
+}
+.linkForSearch {
+  text-decoration: none;
+  font-size: 20px;
+  color: orangered;
+  cursor: pointer;
+  
+}
+.categories {
+  height: 150px;
+  padding: 30px;
+}
+.OptionLastStore {
+  color: rgb(0, 0, 0);
+  display: flex;
+  margin: 0px 80px 20px 80px;
+  justify-content: space-between;
+}
+.seeMore {
+  color: orangered;
+  cursor: pointer;
+}
+.itemlistCategory {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin-left: 80px;
+}
+.itemCategory {
+  width: 60px;
+  border-radius: 50px;
+}
+#options{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin: 20px 0px;
+}
+.contentCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+}
+.cardList{
+  list-style: none;
+}
+.itemFood {
+  width: 200px;
+  height: 120px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.valor {
+  font-weight: bold;
+  color: orangered;
+}
+.clubdiv {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 50px;
+line-height: 30px;
+}
+.cupom {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffce35;
+  border-radius: 10px;
+  width: 450px;
+}
+.cupom::before,
+.cupom::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.cupom::before {
+  left: -30px;
+}
+.cupom::after {
+  right: -30px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  text-align: center;
+  background-color: #ffce35;
+  justify-content: center;
+  align-items: center;
+}
+.MFEndLogo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+footer p {
+  padding: 0px 30px;
+}
+@media screen and (min-width:1140px) {
+  body {
+    background-position: 0px -600px;
+  }
+}
