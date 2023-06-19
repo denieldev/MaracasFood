@@ -4,116 +4,174 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   box-sizing: border-box;
 }
-body {
-  background-image: url(./Img/CheadarBg.svg);
-  background-repeat: no-repeat;
-  background-size: 100vw;
+
+.cabecalho {
+ background-color: #ffce35;
+ border-bottom: solid 10px #ec6e00;
+ display: flex;
+ justify-content: space-between;
+ padding: 20px;
+ align-items: center;
+ height: 100px;
 }
-header {
+
+.logoMarca {
+  width: 150px;
+}
+
+.menuList {
+  list-style: none;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  height: 400px;
+  gap: 20px;
+  font-size: 90%;
 }
-.MFHomeLogo {
-  min-width: 450px;
-  max-width: 700px;
-  margin: 30px;
+
+.menuList a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 500ms;
 }
+
+.menuList a:hover {
+  color: #333333;
+}
+
+.userList {
+  display: flex;
+  gap: 15px;
+}
+
+.iconUser {
+  height: 20px;
+}
+
+.userBuy {
+  font-size: 9px;
+  color: #ffffff;
+}
+
+.navgator {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 #searchFoods {
   box-sizing: border-box;
   border: solid 2px ;
-  max-width: 700px;
-  min-width: 450px;
-  height: 60px;
+  width: 180%;
   border-radius: 50px;
-  text-align: center;
-  font-size: 24px;
-  margin: 30px;
-  padding: 30px;
+  text-align: left;
+  font-size: 12px;
+  padding: 10px 10px 10px 40px;
   background-image: url(./Img/search-outline.svg);
-  background-size: 30px;
+  background-size: 20px;
   background-repeat: no-repeat;
-  background-position: 20px;
+  background-position: 10px ;
+  border: none;
 }
+
+#searchFoods::placeholder{
+  font-size: 12px;
+  text-align: center;
+}
+
+.userOp {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
 .welcomeToMF {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-items: center;
   justify-content: center;
-  height: 200px;
+  align-items: center;
+  height: 180px;
 }
+
 .news {
   padding: 20px;
 }
-.linkForSearch {
-  text-decoration: none;
-  font-size: 20px;
-  color: orangered;
-  cursor: pointer;
-  
-}
-.categories {
-  height: 150px;
-  padding: 30px;
-}
-.OptionLastStore {
-  color: rgb(0, 0, 0);
-  display: flex;
-  margin: 0px 80px 20px 80px;
-  justify-content: space-between;
-}
-.seeMore {
-  color: orangered;
-  cursor: pointer;
-}
-.itemlistCategory {
-  display: flex;
-  gap: 10px;
-  list-style: none;
-  margin-left: 80px;
-}
-.itemCategory {
-  width: 60px;
-  border-radius: 50px;
-}
-#options{
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  margin: 20px 0px;
-}
-.contentCard {
+
+.pedidos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  gap: 20px;
 }
-.cardList{
-  list-style: none;
+
+.pedidosTitle{
+  margin-left: 20px;
+  font-size: 12px;
+  color: #ec6e00;
 }
-.itemFood {
-  width: 200px;
-  height: 120px;
+
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px 0px 0px 20px;
+  overflow: hidden;
+  width: 170px;
   border-radius: 10px;
-  cursor: pointer;
+  border: 1px solid rgb(227, 227, 227);
+  transition: ease-in 500ms;
 }
-.valor {
+.conteiner:hover{
+  box-shadow: #333333 0px 1px 4px 1px;
+  transform: scale(1.01);
+}
+
+.descricaoPrato {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 150px;
+  font-size: 10px;
+}
+
+.conteudoPrato{
+  display: flex;
+}
+
+.pedidoFoto {
+  width: 150px;
+  height: 90px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.pedidoLogo {
+  position: absolute;
+  margin: 3px;
+  width: 30px;
+  border-radius: 50px;
+}
+
+.valorPrato {
+  color: green;
   font-weight: bold;
-  color: orangered;
 }
+
 .clubdiv {
 display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
+justify-content: center;
+justify-items: center;
 padding: 50px;
 line-height: 30px;
 }
+
 .cupom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
   display: block;
   position: relative;
   text-align: center;
@@ -121,7 +179,6 @@ line-height: 30px;
   padding: 20px;
   background-color: #ffce35;
   border-radius: 10px;
-  width: 450px;
 }
 .cupom::before,
 .cupom::after {
@@ -140,24 +197,36 @@ line-height: 30px;
 .cupom::after {
   right: -30px;
 }
+.cupomtitle {
+  padding: 32px;
+ }
+.cupomsubtitle {
+ padding: 32px;
+}
 footer {
   display: flex;
   flex-direction: column;
-  height: 150px;
+  height: 173px;
   text-align: center;
-  background-color: #ffce35;
+  background:url(./Img/Rodapé.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
   justify-content: center;
   align-items: center;
 }
 .MFEndLogo {
   width: 100px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 footer p {
   padding: 0px 30px;
 }
-@media screen and (min-width:1140px) {
-  body {
-    background-position: 0px -600px;
-  }
+
+@media screen and (max-width:840px) {
+  #searchFoods {
+    width: 60%;
+    font-size: 10px;
+}
+ 
 }

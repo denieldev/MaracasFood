@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,48 @@
   <title>Maraca's Food</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-    <img class="MFHomeLogo" src="./Img/MaracasFood.svg" alt="Maraca's Food Logo">
-    <input id="searchFoods" type="text" placeholder="O que a sua fome pede, tem no Maraca's food">
+    <div class="cabecalho">
+      <div class="logoMF">
+        <img class="logoMarca" src="./Img/MaracasFood.svg" alt="Maracas Food">
+      </div>
+      <div class="navgator">
+        <nav class="menu">
+          <ul class="menuList">
+            <li class="menuItens">
+              <a href="">ínicio</a>
+            </li>
+            <li class="menuItens">
+              <a href="">restaurantes</a>
+            </li>
+            <li class="menuItens">
+              <a href="">mercados</a>
+            </li>
+            <li class="menuItens">
+              <a href="">bebidas</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="searchBar">
+          <input id="searchFoods" class="SearchHere" type="text"
+          placeholder="O que a sua fome pede, tem no Maraca's food">
+         </div>
+      </div>
+      <div class="userOp">
+        <li class="userItens menuItens">
+          <a href="#"><img class="iconUser" src="./Img/login.svg" alt=""></a>
+        </li>
+        <li class="userItens menuItens">
+          <img class="iconUser" src="./Img/bag-outline.svg" alt="">
+        </li>
+        <li class="userItens userBuy menuItens">
+          <h2>R$<span>0,00</span></h2>
+          <p class="userBuyItens menuItens"><span>0</span>itens</p>
+        </li>
+      </div>
+    </div>
   </header>
   <main>
     <section class="welcomeToMF">
@@ -19,72 +58,96 @@
       </h2>
       <a class="linkForSearch" href="#searchFoods">Faça seu pedido!</a>
     </section>
-    <section class="categories">
-      <div class="OptionLastStore">
-        <p class="lastStore">Últimas lojas</p>
-        <span class="seeMore">Ver mais</span>
+    <section>
+      <div class="pedidosTitle">
+        <h2>Mais pedidos para o almoço</h2>
       </div>
-      <ul class="itemlistCategory">
-        <li><img class="itemCategory" src="./Img/mcDonald logo.png" alt=""></li>
-        <li><img class="itemCategory" src="./Img/mariapitangaaldeota.jpeg" alt=""></li>
-        <li><img class="itemCategory" src="./Img/habibs.png" alt=""></li>
-        <li><img class="itemCategory" src="./Img/pizzahot.jpg" alt=""></li>
-      </ul>
-    </section>
-    <section id="options">
-      <div class="conteinerCard">
-        <div class="contentCard">
-          <ul class="cardList">
-          <li>
-            <h2 class="titleItem">Sabores de Casa</h2>
-          </li>
-          <li> <img class="itemFood" src="./Img/muqueca.jpg" alt="muqueca de camarão" class="food"></li>
-          <li><p class="descripitionIten">Muqueca de camarão</p></li>
-          <li>
-            <p class="valor">R$ 19,90</p>
-          </li>
-          </ul>
-          <ul class="cardList">
-            <li>
-              <h2 class="titleItem">Habib's</h2>
-            </li>
-            <li> <img class="itemFood" src="./Img/esfirra.jpg" alt="muqueca de camarão" class="food"></li>
-            <li><p class="descripitionIten">Esfirra</p></li>
-            <li>
-              <p class="valor">R$ 4,90</p>
-            </li>
-            </ul>
-            <ul class="cardList">
-              <li>
-                <h2 class="titleItem">MC Donald's</h2>
-              </li>
-              <li> <img class="itemFood" src="./Img/mcdonalds.jpg" alt="muqueca de camarão" class="food"></li>
-              <li><p class="descripitionIten">MC Crispy</p></li>
-              <li>
-                <p class="valor">R$ 23,00</p>
-              </li>
-              </ul>
-              <ul class="cardList">
-                <li>
-                  <h2 class="titleItem">FitNice</h2>
-                </li>
-                <li> <img class="itemFood" src="./Img/fitNice.jpeg" alt="muqueca de camarão" class="food"></li>
-                <li><p class="descripitionIten">Marmita Fitness</p></li>
-                <li>
-                  <p class="valor">R$ 15,00</p>
-                </li>
-                </ul>
+      <section class="pedidos">
+        <div class="conteiner">
+          <div class="conteudoPrato">
+            <img class="pedidoFoto" src="./Img/esfirra.jpg" alt="Esfirra">
+            <img class="pedidoLogo" src="./Img/habibs.png" alt="Habibis">
+          </div>
+          <div class="descricaoPrato">
+            <h2>Esfirra vários sabores</h2>
+            <p class="igredientesPrato">
+              Esfihas a sua escolha (Calabresa, carne, frango, mista, marguerita ou queijo)
+            </p>
+            <span class="quantidade">Serve 1 pessoa</span>
+            <p class="valorPrato">R$<span>15,00</span></p>
+          </div>
         </div>
-      </div>
+        <div class="conteiner">
+          <div class="conteudoPrato">
+            <img class="pedidoFoto" src="./Img/sanduiche.jpeg" alt="Esfirra">
+            <img class="pedidoLogo" src="./Img/mcDonald logo.png" alt="Habibis">
+          </div>
+          <div class="descricaoPrato">
+            <h2>MC lanche feliz</h2>
+            <p class="igredientesPrato">
+              Sanduíche barbecue com molho especial.
+            </p>
+            <span class="quantidade">Serve 1 pessoa</span>
+            <p class="valorPrato">R$<span>26,90</span></p>
+          </div>
+        </div>
+        <div class="conteiner">
+          <div class="conteudoPrato">
+            <img class="pedidoFoto" src="./Img/picanha.jpeg" alt="maminha">
+            <img class="pedidoLogo" src="./Img/recanto da picanha.jpeg" alt="Recanto da picanha">
+          </div>
+          <div class="descricaoPrato">
+            <h2>Maminha completa</h2>
+            <p class="igredientesPrato">
+              1,2 kg de maminha fatiada, arroz branco soltinho, feijão tropeiro temperado com bacon e linguiça defumada, farofa crocante feita na hora, vinagrete fresquinho.
+            </p>
+            <span class="quantidade">Serve 2 pessoa</span>
+            <p class="valorPrato">R$<span>25,00</span></p>
+          </div>
+        </div>
+        <div class="conteiner">
+          <div class="conteudoPrato">
+            <img class="pedidoFoto" src="./Img/espaguete-bolonhesa.jpg" alt="espaguete">
+            <img class="pedidoLogo" src="./Img/garden.jpeg" alt="Garden restaurante">
+          </div>
+          <div class="descricaoPrato">
+            <h2>Espaguete</h2>
+            <p class="igredientesPrato">
+              500g de espaguete cozido al dente, molho à bolonhesa feito com carne moída temperada, molho de tomate e especiarias.
+            </p>
+            <span class="quantidade">Serve 3 pessoa</span>
+            <p class="valorPrato">R$<span>27,90</span></p>
+          </div>
+        </div>
+        <div class="conteiner">
+          <div class="conteudoPrato">
+            <img class="pedidoFoto" src="./Img/feijoada.jpg" alt="Esfirra">
+            <img class="pedidoLogo" src="./Img/recanto da picanha.jpeg" alt="Habibis">
+          </div>
+          <div class="descricaoPrato">
+            <h2>Feijoada completa</h2>
+            <p class="igredientesPrato">
+              A deliciosa feijoada é o prato perfeito para quem adora sabores intensos e marcantes.
+            </p>
+            <span class="quantidade">Serve 3 pessoa</span>
+            <p class="valorPrato">R$<span>27,90</span></p>
+          </div>
+        </div>
+        
+      </section>
+     
     </section>
+    
     <section class="clubeDeVantagens">
       <div class="clubdiv">
-        <h4 class="clubtitle">Já faz parte do clube de vantagens? Ultilize seus pontos para obter mais descontos em seus pedidos!</h4>
+        <h4 class="clubtitle">Já faz parte do clube de vantagens? Ultilize seus pontos para obter mais descontos em seus
+          pedidos!</h4>
         <p class="club subtitle">cumpom de boas vindas para novos usuários!</p>
         <div class="cupom">
+          <div class="pontilhado"></div>
           <h2 class="cupomtitle">Use agora MaracasFood01<br>ganhe até R$50,00 de descontos</h2>
-          <p class="cupomsubtitle">Válido apenas para novos usuários, promoção não acumulativa, 
-						encerra no dia 09/06/2023 ás 24h.</p>
+          <p class="cupomsubtitle">Válido apenas para novos usuários, promoção não acumulativa,
+            encerra no dia 09/06/2023 ás 24h.</p>
         </div>
       </div>
     </section>
@@ -94,4 +157,5 @@
     <p>Maraca's food entregando o melhor da gastronomia de Maracanaú desde 2023</p>
   </footer>
 </body>
+
 </html>
